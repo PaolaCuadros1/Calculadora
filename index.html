@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="divTest"></div>
+    <div class="container">
+        <div class="calculator" class="column">
+            <h1 style="text-align: center;"> Calculadora </h1>
+            <div class="calculator-info">
+                <input type="text" id="data" disabled />
+            </div>
+            <div class="calculator-data row">
+                <div class="row" style=" width: 90%; flex-wrap: wrap;">
+                    <input type="button" class="btn-number" onclick="printNumber(this);" value="1">
+                    <input type="button" class="btn-number" onclick="printNumber(this);" value="2">
+                    <input type="button" class="btn-number" onclick="printNumber(this);" value="3">
+                    <input type="button" class="btn-number" onclick="printNumber(this);" value="4">
+                    <input type="button" class="btn-number" onclick="printNumber(this);" value="5">
+                    <input type="button" class="btn-number" onclick="printNumber(this);" value="6">
+                    <input type="button" class="btn-number" onclick="printNumber(this);" value="7">
+                    <input type="button" class="btn-number" onclick="printNumber(this);" value="8">
+                    <input type="button" class="btn-number" onclick="printNumber(this);" value="9">
+                    <input type="button" class="btn-number" onclick="clearInput();" value="Limipar">
+                    <input type="button" class="btn-number" onclick="printNumber(this);" value="0">
+                    <input type="button" class="btn-number" onclick="printOperation();" value="=">
+                </div>
+                <div class="column" style="width: 10%; text-align: center; ">
+                    <input type="button" class="btn-operator" value="+" onclick="printOperator(this);">
+                    <input type="button" class="btn-operator" value="-" onclick="printOperator(this);">
+                    <input type="button" class="btn-operator" value="*" onclick="printOperator(this);">
+                    <input type="button" class="btn-operator" value="/" onclick="printOperator(this);">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
